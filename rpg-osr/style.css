@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: black;
+    /*background-image: url(imagens/neverland1.jpg);*/
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+div{
+    margin-bottom: -40px;
+}
+img{
+    max-width: 600px;
+    display: block;
+    margin: auto;
+}
+
+p{
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    color: white;
+}
+
+a{
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    display: block;
+    padding: 19px 0px 19px 0px;
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: #cccc;
+}
+
+.rodape{
+    background-color: #123049;
+    color: white;
+    font-size: 0.5em;
+    padding: 1px;
+}
