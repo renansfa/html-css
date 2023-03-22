@@ -8,6 +8,8 @@
 }
 
 body{
+    min-width: 300px;
+    min-height: 300px;
     background-color: black;
     /*background-image: url(imagens/neverland1.jpg);*/
     background-attachment: fixed;
