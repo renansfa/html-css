@@ -7,34 +7,62 @@
     <title>Teste de imagem de fundo</title>
     <style>
         body{
-            background-image: url(pattern002.png);
-            background-size: 100px 100px;
-            background-repeat: repeat-y;
-
+            
+           /* background-color: black;
+            background-image: url(wallpaper002.jpg);
+            background-position: center top;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            -------------------
+             shorthand background \/
+                color > image > position > repeat > [size] >
+                attachment.
+                size não funciona, mas o resto funciona!  
+            */
+            
+            height: 100vh; /* fundamental para imagens de fundo */
+            background: black url(wallpaper002.jpg) center center no-repeat fixed;
+            background-size: cover;
+            
         }
-        .quadrado{
-            display: inline-block;
-            border: 3px solid black;
-            width: 200px;
-            height: 200px;
-            background-color: gray;
-        }
-
-        #q1{
-            background-color: skyblue;
-        }
-        #q2{
-            background-image: linear-gradient(to bottom, pink, purple);
-        }
-        #q3{
-            background-image: url(pattern001.png);
+        main{
+            background-color: white;
+            max-width: 600px;
+            padding: 10px;
+            border: 1px solid red;
+            border-radius: 10px;
+            margin: auto;
         }
 
     </style>
 </head>
+
 <body>
-    <div class="quadrado" id="q1"></div>
-    <div class="quadrado" id="q2"></div>
-    <div class="quadrado" id="q3"></div>
+    <main>
+        <h1> Testes! </h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam commodi quo voluptatem facilis et voluptas fuga provident ad alias obcaecati placeat, veritatis dolorem, quasi doloremque dolor eligendi rerum cum mollitia. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, laborum! Assumenda facilis magnam quibusdam fugit voluptatem ipsum fuga accusantium, vel eum ex, minima excepturi mollitia nesciunt corporis neque enim molestias?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, minima soluta ut, rem sapiente amet aliquid hic laboriosam sit aut cumque molestiae obcaecati est doloremque animi qui magnam quas porro.
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam commodi quo voluptatem facilis et voluptas fuga provident ad alias obcaecati placeat, veritatis dolorem, quasi doloremque dolor eligendi rerum cum mollitia. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, laborum! Assumenda facilis magnam quibusdam fugit voluptatem ipsum fuga accusantium, vel eum ex, minima excepturi mollitia nesciunt corporis neque enim molestias?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, minima soluta ut, rem sapiente amet aliquid hic laboriosam sit aut cumque molestiae obcaecati est doloremque animi qui magnam quas porro.
+        </p>   
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam commodi quo voluptatem facilis et voluptas fuga provident ad alias obcaecati placeat, veritatis dolorem, quasi doloremque dolor eligendi rerum cum mollitia. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, laborum! Assumenda facilis magnam quibusdam fugit voluptatem ipsum fuga accusantium, vel eum ex, minima excepturi mollitia nesciunt corporis neque enim molestias?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, minima soluta ut, rem sapiente amet aliquid hic laboriosam sit aut cumque molestiae obcaecati est doloremque animi qui magnam quas porro.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam commodi quo voluptatem facilis et voluptas fuga provident ad alias obcaecati placeat, veritatis dolorem, quasi doloremque dolor eligendi rerum cum mollitia. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, laborum! Assumenda facilis magnam quibusdam fugit voluptatem ipsum fuga accusantium, vel eum ex, minima excepturi mollitia nesciunt corporis neque enim molestias?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, minima soluta ut, rem sapiente amet aliquid hic laboriosam sit aut cumque molestiae obcaecati est doloremque animi qui magnam quas porro.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam commodi quo voluptatem facilis et voluptas fuga provident ad alias obcaecati placeat, veritatis dolorem, quasi doloremque dolor eligendi rerum cum mollitia. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, laborum! Assumenda facilis magnam quibusdam fugit voluptatem ipsum fuga accusantium, vel eum ex, minima excepturi mollitia nesciunt corporis neque enim molestias?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, minima soluta ut, rem sapiente amet aliquid hic laboriosam sit aut cumque molestiae obcaecati est doloremque animi qui magnam quas porro.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam commodi quo voluptatem facilis et voluptas fuga provident ad alias obcaecati placeat, veritatis dolorem, quasi doloremque dolor eligendi rerum cum mollitia. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, laborum! Assumenda facilis magnam quibusdam fugit voluptatem ipsum fuga accusantium, vel eum ex, minima excepturi mollitia nesciunt corporis neque enim molestias?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, minima soluta ut, rem sapiente amet aliquid hic laboriosam sit aut cumque molestiae obcaecati est doloremque animi qui magnam quas porro.
+        </p>
+        
+    </main>
+
 </body>
 </html>
