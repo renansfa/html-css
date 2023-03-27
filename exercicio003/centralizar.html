@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centralizar no verticalmente e horizontalmente</title>
+    <style>
+        .conteiner{
+            position: relative;
+            background-color: purple;
+            height: 80vh;
+            padding: 20px;
+
+        }
+        .conteudo{ background-color: yellow;
+            height: 200px;
+            width: 300px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%, -50%);
+        }
+
+        P{
+            color: red;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -119%);
+
+        }
+    </style>
+</head>
+
+<body>
+    <section class="conteiner">
+
+        <article class="conteudo">
+           <p>TÁ NO MEIO ESSA?</p>
+        </article>
+    </section>
+    
+</body>
+</html>
