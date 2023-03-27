@@ -60,49 +60,43 @@ header a:hover{
 p{
     text-align: left;
     font-family: var(--fonte-poema);
-    font-size: 3em;
+    font-size: 3vh;
+
     line-height: 2em;
     margin-left: 30px;
-    padding-left: 30px;
     margin-block-start: 1em;
     margin-block-end: 1em;
 
 }
 
 
-
 .primeiro-paralax{
     display: block;
     background-image: url(imagens/background001.jpg);
-    background-position: center center;
+    background-position: right center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-
-}
-
-.texto-primeiro-paralax{
-    color: white;
-    background-color: rgba(0, 0, 0, 0.527);
-    width: 600px;
 
 }
 
 .segundo-paralax{
     display: block;
     background-image: url(imagens/background002.jpg);
-    background-position: center center;
+    background-position: right center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 
 }
 
-.texto-segundo-paralax{
+.texto-paralax{
     color: white;
     background-color: rgba(0, 0, 0, 0.527);
-    width: 600px;
+    display: inline-block;
+
 }
+
 
 
 footer{
@@ -116,7 +110,7 @@ footer{
 footer p{
     font-family: var(--fonte-padrao);
     text-align: center;
-    font-size: 0.8em;
+    font-size: 1.5vh;;
 }
 
 .rodape-link{
