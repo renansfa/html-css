@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Grandes</title>
+    <style>
+
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        table{
+            width: 400px;
+            border-collapse: collapse;
+            position: relative;/*obrigatorio para  o cabeçalho rolar junto com a pagina*/
+        }
+
+        thead tr{ /*Sticky e o mesmo fundo do thead é essencial para o cabeçalho rolar junto com a pagina*/
+            position: sticky;
+            top: -1;
+            background-color: gray;
+        }
+
+        caption{
+            font-size: 2em;
+            font-weight: bold;
+            background-color: lightblue;
+        }
+
+        thead, tfoot{ background-color: gray;
+            color: white;
+        }
+
+        tbody tr:nth-child(2n)/*Pode usar even(par) e odd(impar) também*/{
+            background-color: lightgrey;
+        }
+
+        td, th{ border: 2px solid black;
+        }
+
+
+        td.numero{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas Grandes</h1>
+
+    <!--Anatomia de tabelas grandes (melhor estrutura na verdade)
+    
+        Table
+            capition (opcional) = legenda/titulo da tabela
+            Thead (opcional)
+                tr,td,th (pode ter tudo isso)
+            Tbody
+                tr,td,th (pode ter tudo isso)
+            Tfoot (opcional)
+            tr,td,th(pode ter tudo isso)
+
+        tr= table row - linha
+        td= table data - dados
+        th = table heades - cabeçalho
+    -->
+    <table>
+        <caption>
+            Tabela Tabelar
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">45.000</td>
+
+                
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">35.000</td>
+            </tr>
+            <tr>
+                <td>Recife</td>
+                <td class="numero">25.000</td>
+            </tr>
+            <tr>
+                <td>Maceio</td>
+                <td class="numero">5.000</td>
+            </tr>
+            
+        </tbody>
+
+        <tfoot>
+            <th scope="row">Total Habitantes</th>
+            <td class="numero"><strong>80.000</strong></td>
+
+        </tfoot>
+    </table>
+
+
+
+</body>
+</html>
