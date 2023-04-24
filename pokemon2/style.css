@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0%;
+    margin: 0%;
+
+}
+
+
+body {
+    background-color: #363636;
+}
+
+.linhaUm{
+
+    display: inline-block;
+
+    text-align: center;
+    width: 200px;
+    height: 250px;
+    background-color: #9B9B9B;
+    color: white;
+    border-radius: 10%;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.445);
+    padding-top: 10px;
+    margin: 10px;
+}
+
+.linhaDois{
+    
+    display: inline-block;
+
+    text-align: center;
+    width: 200px;
+    height: 250px;
+    background-color: #9B9B9B;
+    color: white;
+    border-radius: 10%;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.445);
+    padding-top: 10px;
+    margin: 10px;
+
+}
+
+
+div:hover {
+    margin: 10px;
+    padding: 1%;
+    box-shadow: 3px 2px 15px #00000085;
+    border-radius: 10%;
+    border-style: dotted;
+    border-color: yellowgreen;
+
+}
+
+.pokename {
+    margin: auto;
+    padding: 2px;
+    text-align: center;
+    font-weight: bolder;
+    border: 2px solid white;
+    width: 70%;
+    border-radius: 10px;
+}
+
+.pokegif {
+    margin: 10px;
+}
+
+.poketypeFire{
+    display: inline-block;
+    font-weight: bold;
+    background-color: #ca6c24;
+    width: 30%;
+    border-radius: 10px;
+
+    margin: auto;
+    padding: 5px;
+
+}
+
+.poketypeWater{
+    display: inline-block;
+    font-weight: bold;
+    background-color: #1575c4;
+    width: 30%;
+    border-radius: 10px;
+
+    margin: auto;
+    padding: 5px;
+
+}
+
+
+.poketypePoison{
+    display: inline-block;
+    font-weight: bold;
+    background-color: #da1aa0;
+    width: 34%;
+    border-radius: 10px;
+
+    margin: auto;
+    padding: 5px;
+
+}
+
+
+.wiki {
+    width: 180px;
+    height: 80px;
+    overflow: auto;
+    text-align: left;
+    font-weight: bold;
+
+    margin-top: 8%;
+    margin-left: 5%;
+}
+
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 1px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: gray;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.459);
+    border-radius: 10px;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 03</title>
+</head>
+<body>
+    <h1>Mais comandos</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+
+    <fieldset>
+        <legend> Esportes </legend>
+        <p>
+            <input type="checkbox" name="fut" id="ifut"> <label for="ifut">Futebol</label> <br>
+            <input type="checkbox" name="volei" id="ivolei"> <label for="ivolei">Volei</label> <br>
+            <input type="checkbox" name="basq" id="ibasq"> <label for="ibasq">Basquete</label> <br>
+        </p>
+        
+    </fieldset>
+
+    <fieldset>
+        <legend>Sexo</legend>
+        <p>
+         <!--Nos inputs tipo "radio" é preciso deixar o mesmo "name" para as opções, assim quando vc seleciona uma ele desmarca a outra-->
+            <input type="radio" name="sexo" id="ifeminino"> <label for="ifeminino">Feminino</label> <br>
+            <input type="radio" name="sexo" id="imasculino"> <label for="imasculino">Maculino</label>
+        </p>
+
+        <p>
+            <label for="icor">Cores: </label>
+            <input type="color" name="cores" id="icores">
+        </p>
+
+        <p>
+            <label for="inivel">Nivel de satisfação: </label>
+            <input type="range" name="nivel" id="inivel" min="1" max="10" value="9">
+        </p>
+
+        <p>
+            <label for="ifoto">Foto:</label>
+            <input type="file" name="foto" id="ifoto">
+            <!--Ao usar o input "file" é preciso que o metodo (lá em form) seja POST para que os arquivos sejam enviados corretamente (e não get.) -->
+        </p>
+
+        <p>
+            <label for="iestado">Estado:    </label>
+            <select name="estado" id="idestado">
+            <!--O select é bom para quando você consegue colocar todas as opções! Os datalists são bons para quando não dá para colocar todas as opções, pois eles aceitam que o usuário digite opções-->
+
+                <option value="" selected>---Selecionar---</option>
+                <optgroup label="Estados Sudeste">
+                    <option value="SP">São Pualo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                </optgroup>
+
+                <optgroup label="Estados Nordeste">
+                    <option value="PE">Pernambuco</option>
+                    <option value="CE">Ceará</option>
+                </optgroup>
+
+            </select>
+        </p>
+
+
+
+
+    </fieldset>
+
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+
+
+
+
+    </form>
+    
+
+    
+</body>
+</html>

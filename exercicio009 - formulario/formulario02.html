@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 02</title>
+</head>
+<body>
+    <h1>TESTE FORMULÁRIO</h1>
+
+    <fildset> <!--separa tudo visualmente em uma caixa-->
+        <legend>Dados Pessoais</legend>
+        <form action="cadastro.php" method="get" autocomplete="on">
+            <p>
+                <label for="isuario">Usuário:</label>
+                <input type="text" name="usuario" id="isuario" required minlength="6" maxlength="15" size="20" placeholder="Nome completo" autocomplete="username">
+                            <!--O atributo "requeired" torna o preenchimento do campo obrigatório no formulário. O atributo "size" diz o tamanho da caixa, e os atributos "minLength" e "maxLength" tratam no número de caracteres que podem ser digitados-->
+                            <!--O atributo "placeholder" deixa um textinho na caixa que some quando o usuarío digita algo.-->
+            </p>
+            <p>
+                <label for="isenha">Senha:</label>
+                <input type="password" name="senha" id="isenha" minlength="8" maxlength="15" placeholder="Mínimo 8 letras" autocomplete="current-password"  required>
+            </p>
+            <p>
+                <label for="imedia">Média:</label>
+                <input type="number" name="media" id="imedia" min="0" max="10" step="0.1" placeholder="0 a 10" required>
+                <!--O atributo "value" já deixa um valor na caixa, subistitui o placeholder.-->
+            </p>
+            <p>
+                <label for="imes">Mês e Ano:</label>
+                <input type="month" name="mes" id="imes" value="2023-04">
+            </p>
+            <p>
+                <label for="idataCompleta">Data Completa</label>
+                <input type="date" name="dataCompleta" id="idataCompleta">
+            </p>
+            <p>
+                <label for="idataCompleta2">Data Completa</label>
+                <input type="date" name="dataCompleta2" id="idataCompleta2" value="1992-04-02">
+            </p>
+            <p>
+                <label for="ihora">Hora:</label>
+                <input type="time" name="hora" id="ihora">
+            </p>
+            <p>
+                <label for="iemail">E-mail:</label>
+                <input type="email" name="email" id="iemail" autocomplete="email" required>
+                <!--Isso basicamente só verifica se existe um @ na linha digitada ou não, mas é meio útil. melhor que nada.-->
+            </p>
+    </fildset>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+        
+   
+</body>
+</html>

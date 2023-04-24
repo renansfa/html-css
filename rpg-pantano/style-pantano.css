@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+:root{
+    --fonte-destaque:'Press Start 2P', cursive;
+    --fonte-padrao: Arial, Helvetica, sans-serif;
+
+    --cor1: #6AAED9;
+    --cor2: #63A5BF;
+    --cor3: #B2BF4E;
+    --cor4: #736A3D;
+    --cor5: #73614C;
+}
+
+nav{
+    display: inline-block;
+}
+
+
+main{
+    background-color: white;
+    max-width: 800px;
+    color: black;
+    margin: auto;
+    box-shadow: 0px 0px 10px 0px #0000004d;
+}
+
+
+main h1{
+
+    font-family: var(--fonte-destaque);
+    background-color: var(--cor5);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+div > p{
+    display: none;
+}
+
+div:hover > p{
+    display: block;
+}
+
+p{
+    font-family: var(--fonte-padrao);
+    text-align: justify;
+    padding: 0px 10px;
+    font-size: 3vh;
+    line-height: 1.5em;
+    text-indent: 1em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+
+}

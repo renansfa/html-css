@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Meu primeiro formulario</h1>
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <!-- Metodos GET e POST. GET gera links compartilhaveis, porém só podem ter até 3 mil bytes (3mil letras) e também não se deve utilizar o GET em campos sensíveis do formulário - senha, número do cartão de crédito, endereço ou envio de arquivos (fotos etc)
+            O POST é indicado para envio de dados sensíveis e links com mais de 3 mil bytes. -->
+        <!--O cadastro.php não existe, mas se existisse estariamos enviando para ele as informações deste formulario-->
+        <!--label faz a relação entre o o objeto do formulario e a etiqueta dele!!-->
+        <p><label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome"></p>
+            <!--o name é importante para html,php e o id é importante para o label e para JS-->
+        <p><label for="isobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+        
+        <p><input type="submit" value="Enviar"></p>
+
+    </form>
+</body>
+</html>
