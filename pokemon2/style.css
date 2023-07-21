@@ -58,7 +58,7 @@ div:hover {
     width: 30%;
     border-radius: 10px;
 
-    margin: auto;
+    margin: 2px;
     padding: 5px;
 }
 
@@ -69,7 +69,7 @@ div:hover {
     width: 30%;
     border-radius: 10px;
 
-    margin: auto;
+    margin: 2px;;
     padding: 5px;
 }
 
@@ -80,7 +80,7 @@ div:hover {
     width: 30%;
     border-radius: 10px;
 
-    margin: auto;
+    margin: 2px;
     padding: 5px;
 
 }
@@ -93,7 +93,7 @@ div:hover {
     width: 34%;
     border-radius: 10px;
 
-    margin: auto;
+    margin: 2px;
     padding: 5px;
 
 }
@@ -106,7 +106,7 @@ div:hover {
     text-align: left;
     font-weight: bold;
 
-    margin-top: 8%;
+    margin-top: 6%;
     margin-left: 5%;
 }
 

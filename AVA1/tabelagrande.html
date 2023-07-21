@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Grandes</title>
+    <style>
+
+        table{
+            width: 400px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        thead tr{ 
+            position: sticky;
+        }
+
+        caption{
+            font-size: 2em;
+            font-weight: bold;
+            background-color: lightblue;
+        }
+
+        thead, tfoot{ background-color: gray;
+            color: white;
+        }
+
+        th{
+            background-color: gray;
+            color: white;
+        }
+
+        td, th{ border: 2px solid black;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>TRABALHO AVA 1</h1>
+
+    <table>
+        <caption>
+            Formulário em Tabela
+        </caption>
+
+        <form action="cadastro.php" method="post" autocomplete="off">
+        <thead>
+            <tr>
+                <th scope="col">Dados Pessoais</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>
+                    <label for="inome">Nome:</label>
+                    <input type="text" name="nome" id="inome" placeholder="Nome Completo"> 
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="inome">Nome do Pai:</label>
+                    <input type="text" name="nomepai" id="inomepai" placeholder="Nome Completo"> 
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="inome">Nome da Mãe:</label>
+                    <input type="text" name="nomemae" id="inomemae" placeholder="Nome Completo"> 
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="isuario">Apelido:</label>
+                    <input type="text" name="usuario" id="isuario" required minlength="6" maxlength="15" size="20" placeholder="Seu Apelido" autocomplete="username">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="isenha">Senha:</label>
+                    <input type="password" name="senha" id="isenha" minlength="8" maxlength="15" placeholder="Mínimo 8 letras" autocomplete="current-password"  required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="iemail">E-mail:</label>
+                    <input type="email" name="email" id="iemail" autocomplete="email" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="imedia">Média do Curso:</label>
+                    <input type="number" name="media" id="imedia" min="0" max="10" step="0.1" placeholder="0 a 10" required>
+                </td>
+            </tr>
+
+            <th scope="col">Sexo</th>
+            <tr>
+                <td>
+                    <input type="radio" name="sexo" id="ifeminino"> <label for="ifeminino">Feminino</label> <br>
+                    <input type="radio" name="sexo" id="imasculino"> <label for="imasculino">Maculino</label>
+                </td>
+            </tr>
+
+            <th scope="col">Horário Preferencial</th>
+            <tr>
+                <td>
+                    <input type="checkbox" name="horario" id="imanha"> 
+                    <label for="imanha">Manhã</label>
+                    <input type="checkbox" name="horario" id="itarde"> <label for="itarde">Tarde</label>
+                    <input type="checkbox" name="horario" id="inoite"> <label for="inoite">Noite</label>
+                </td>
+            </tr>
+
+            <th scope="col">Outras Perguntas</th>
+            <tr>
+                <td>
+                    <label for="idisciplina">Escolha uma Disciplina:</label>
+                    <select name="disciplina" id="idisciplina">
+                      <option value="redes">Redes</option>
+                      <option value="webdev">Web Dev</option>
+                      <option value="seguranca">Segurança</option>
+                      <option value="direitos">Direitos Humanos</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="iatividade">Local de preferencia para correr:</label>
+                    <select name="atividade" id="iatividade">
+                    <optgroup label="Locais de abertos">
+                        <option value="parque">Parques</option>
+                        <option value="esteira">Ruas</option>
+                    </optgroup>
+                    <optgroup label="Locais Fechados">
+                        <option value="academia">Academia</option>
+                        <option value="casa">Dentro de Casa</option>
+                    </optgroup>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="iopniao">Opiniões:</label></p>
+                    <textarea name="opiniao" id="iopiniao"  rows="4" cols="50" placeholder="O que você gostaria de dizer?"></textarea>
+                </td>
+            </tr>
+
+            <th scope="col"> Aleatoriedades: </th>
+            <tr>
+                <td>
+                    <label for="idataCompleta">Data Completa</label>
+                    <input type="date" name="dataCompleta" id="idataCompleta">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="imes">Mês e Ano:</label>
+                    <input type="month" name="mes" id="imes" value="2023-06">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="ihora">Hora:</label>
+                    <input type="time" name="hora" id="ihora">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="inivel">Nivel de satisfação: </label>
+                    <input type="range" name="nivel" id="inivel" min="1" max="10" value="10">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="icor">Cores: </label>
+                    <input type="color" name="cores" id="icores">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="ifoto">Foto:</label>
+                    <input type="file" name="foto" id="ifoto">
+                </td>
+            </tr>
+
+
+        </tbody>
+
+        <tfoot>
+            <th scope="row">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </th>
+        </tfoot>
+    </table>
+
+
+    </form>
+</body>
+</html>
