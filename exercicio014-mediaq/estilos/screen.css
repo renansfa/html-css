@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+main{
+
+    width: 768px;
+}
+
+i#burger{
+    display: none;
+
+}
+
+menu{
+    display: block;
+}
+
+body{
+    background-color: pink;
+}
+
+menu li {
+    display: inline-block;
+}

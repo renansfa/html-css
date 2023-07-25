@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menus responsivos</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/screen.css" media="screen and (min-width: 768px)">
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <!--MENU RESPONSIVO NO CSS-->
+        <h1> MENU
+            <i id= "burger" class="material-icons" onclick="clickMenu()">
+            menu
+            </i>
+        </h1>
+        <menu id="itens" type="toolbar">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+            </ul>
+        </menu>
+    </header>
+
+    <main>
+        <article>
+            <h2>Texto Teste</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel rem laudantium, veritatis, fugiat nemo saepe aspernatur nihil facilis itaque totam placeat porro distinctio, expedita sunt. Aspernatur saepe unde velit nobis.
+            </p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque, aut. Sunt quod fugit, dicta suscipit quam sapiente unde. Quam aspernatur voluptate sint porro est cumque ipsam quisquam atque assumenda inventore?</p>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. In suscipit molestiae odio aperiam, expedita ipsam non veritatis, enim nam repellendus reiciendis corrupti beatae natus a voluptates eos sapiente commodi quidem!
+            </p>
+        </article>
+    </main>
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            }
+            else { itens.style.display = 'block' }
+        }
+
+        function mudouTamanho(){
+            if (window.innerWidth >= 600) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+    </script>
+    
+</body>
+</html>
